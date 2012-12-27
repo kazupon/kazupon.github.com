@@ -2,6 +2,8 @@
 
 Tumblr blog articles.
 
+http://blog.kazupon.jp
+
 
 # License
 Copyright (c) kazuya kawaguchi.
