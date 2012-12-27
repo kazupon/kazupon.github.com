@@ -1,0 +1,5 @@
+---
+type: video
+tags: 
+embed: 
+---
