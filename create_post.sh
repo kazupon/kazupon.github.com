@@ -10,7 +10,7 @@ read TEMPLATE
 read -p "Enter slug, i.e. my-post-slug: " SLUG
 
 # get file extension 
-COPY_FILE=_posts/$TEMPLATE
+COPY_FILE=_templates/$TEMPLATE
 COPY_FILE_NAME=$(basename $COPY_FILE)
 COPY_FILE_EXT=${COPY_FILE_NAME##*.}
 
