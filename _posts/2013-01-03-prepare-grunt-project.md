@@ -1,9 +1,12 @@
 ---
-type: text
-tags: gurnt.js,grunt,project,scaffold
+state: published
+tags: grunt,project,scaffold,grunt.js,build,tools
+date: '2013-01-02 17:10:00 GMT'
 format: markdown
+slug: grunt-scratch-project
 title: GruntをスクラッチなJavascriptプロジェクトに導入する
-tweet: ブログ書いた / GruntをスクラッチなJavascriptプロジェクトに導入する [URL]
+id: 39482409323
+type: text
 ---
 
 Javascript 向けのプロジェクトビルドツールである，[Grunt][Grunt] というものがある．今お手伝いしているプロジェクトでそろそろ scaffold 的なものが必要になってきた．なので，まずは[ここ][grunt-wiki]のドキュメントを参考にしながら，クリーンでスクラッチな Node 向けのプロジェクトに Grunt を導入してみる．その次に [grunt-init][grunt-init] で簡単な単体テストのコードのテンプレを作成できるようにしてみる．

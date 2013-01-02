@@ -1,10 +1,12 @@
 ---
-type: text
-title: 2013新年あいさつ
-format: markdown
+state: published
 tags: work,life
+date: '2013-01-01 13:00:53 GMT'
+format: markdown
 slug: 2013-a-happy-new-year
-tweet: 今年初のブログ書いた / 2013新年あいさつ [URL]
+title: 2013新年あいさつ
+id: 39379027926
+type: text
 ---
 
 新年あけましておめでとうございます。
