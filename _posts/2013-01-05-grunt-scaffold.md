@@ -8,7 +8,6 @@ title: grunt-initでプロジェクトにscaffoldな仕組みを導入する
 id: 39659396196
 type: text
 ---
-
 [前回][prev-blog]のブログの続き．
 
 前回のブログでは，Javascript なプロジェクトに scaffold 的な導入するための準備として，[Grunt][Grunt] を導入して `Gruntfile.js` でプロジェクトのビルドをタスクベースでできるようにした．
@@ -338,7 +337,7 @@ exports.template = function (grunt, init, done) { // (1): exports
 ======
 `grunt-init` で自分が作成したカスタムテンプレートでプロジェクトに scaffold 的な仕組みを導入できるよう説明しました．`grunt-init` のお作法によって適切にテンプレート構造でカスタムテンプレートを作成することで，`grunt-init path/to/template` のように指定することで，インタラクティブな入力によってプロジェクトに必要なファイルをシステマチックに作成・コピーをしてくれて，細かい手作業によるミスを減らしてくれるようになります．
 
-今回のブログでは，カスタムテンプレートは至ってシンプルなものでしたが，`template.js` に `grunt-init`の API や，[grunt の API][grunt-api] をうまく利用すれば，ファイルの重複チェックや，プロンプト入力の validation なども実装すると，もっととくてイケてる scaffold な機能を提供できます．
+今回のブログでは，カスタムテンプレートは至ってシンプルなものでしたが，`template.js` に `grunt-init`の API や，[grunt の API][grunt-api] をうまく利用すれば，ファイルの重複チェックや，プロンプト入力の validation なども実装すると，もっとよくてイケてる scaffold な機能を提供できます．
 
 また，`grunt-init` はテンプレートベースによる scaffold 機能を提供してくれるので，特に Javascript なプロジェクトだけでなく，テキストベースの仕様書の作成といった，単調なテンプレート処理でも利用することができます．実例として，github の [enja-oss][enja-oss] というオープンソースな翻訳プロジェクトでは，実際に利用しているようです．
 
