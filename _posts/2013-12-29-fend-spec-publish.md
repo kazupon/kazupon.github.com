@@ -1,3 +1,13 @@
+---
+state: published
+tags: node.js,framework,fend
+date: '2013-12-28 19:00:16 GMT'
+format: markdown
+slug: fend-spec
+title: Fend の spec を公開しました
+id: 71434110768
+type: text
+---
 先日 [この記事][blog-koa-entry] で、ここ最近作っている [Fend.js][old-fend] という Web アプリケーションフレームワークを作っていることをお伝えしました。
 
 改めて、仕様、設計方針について整理も兼ねて、spec を下記の github の repository にドキュメントとして公開しましたので、興味がある方は一読をどぞー。
