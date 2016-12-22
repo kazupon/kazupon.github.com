@@ -124,7 +124,7 @@ unit/root/test.js
 'use strict';
 
 var test = require('tape');
-var {{= module_name }} = require('../lib/{{= module_name }}');
+var {{ module_name }} = require('../lib/{{ module_name }}');
 
 /*
  * tape little reference
@@ -163,24 +163,24 @@ var {{= module_name }} = require('../lib/{{= module_name }}');
  * - var htest = test.createHarness()
  */
 
-test('{{= module_name }}', function (t) {
+test('{{ module_name }}', function (t) {
   t.fail('should be implemnted test !!');
 
   t.end();
 });
 ```
 
-このテンプレートファイルの説明すべきポイントとしては，`{%= module_name %}` で `grunt-init` コマンドのプロンプトで指定されたモジュール名で置換するようにしている．`root/` 配下にあるテンプレートは，基本こんな感じで `{% %}` に置換したい変数名を指定したテンプレートを作成すればいいだけだ．今回この記事で扱うテンプレートは1つのファイルだけであるが，他にも `root/` には `grunt-init` に[ビルドイン][template-build-in]されているテンプレートのように，複数のテンプレートを設置することも可能．
+このテンプレートファイルの説明すべきポイントとしては，`{{ module_name }}` で `grunt-init` コマンドのプロンプトで指定されたモジュール名で置換するようにしている．`root/` 配下にあるテンプレートは，基本こんな感じで `{{ }}` に置換したい変数名を指定したテンプレートを作成すればいいだけだ．今回この記事で扱うテンプレートは1つのファイルだけであるが，他にも `root/` には `grunt-init` に[ビルドイン][template-build-in]されているテンプレートのように，複数のテンプレートを設置することも可能．
 
 なお，今回のテンプレートには，コメントで単体テストライブラリのリファレンス的なものをおまけも入れている．こうすることで，このプロジェクトに関わる初めての人にもユーザーフレンドリーになって，余計なドキュメントを作成する手間が省けるということだ．
 
 
 unit/rename.json
 ----------------
-続いて，`unit/rename.json`．このファイルには，`root/` 配下にあるテンプレートのリネームルールを JSON フォーマットで `{% %}` を使ったりしてルールを記述する．ファイル内容は以下な感じ．
+続いて，`unit/rename.json`．このファイルには，`root/` 配下にあるテンプレートのリネームルールを JSON フォーマットで `{{ }}` を使ったりしてルールを記述する．ファイル内容は以下な感じ．
 
     {
-      "test.js": "test/{%= module_name %}.test.js"
+      "test.js": "test/{{ module_name }}.test.js"
     }
 
 key には，`root/` 配下にある対象となるテンプレートファイル名，value の部分には，テンプレートの処理先のパスを指定する．`rename.json` の詳細仕様については，[ここ][renaming]に書かれている．ルールの複数指定はもちろん可能．
