@@ -124,7 +124,7 @@ unit/root/test.js
 'use strict';
 
 var test = require('tape');
-var {%= module_name %} = require('../lib/{%= module_name %}');
+var {{= module_name }} = require('../lib/{{= module_name }}');
 
 /*
  * tape little reference
@@ -163,7 +163,7 @@ var {%= module_name %} = require('../lib/{%= module_name %}');
  * - var htest = test.createHarness()
  */
 
-test('{%= module_name %}', function (t) {
+test('{{= module_name }}', function (t) {
   t.fail('should be implemnted test !!');
 
   t.end();
