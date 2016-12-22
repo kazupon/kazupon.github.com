@@ -120,7 +120,7 @@ unit/root/test.js
 まずは，`unit/root/test.js` というテンプレート．具体的には，以下のような感じ．
 
 
-<pre class="prettyprint linenums">
+```
 'use strict';
 
 var test = require('tape');
@@ -168,7 +168,7 @@ test('{%= module_name %}', function (t) {
 
   t.end();
 });
-</pre>
+```
 
 このテンプレートファイルの説明すべきポイントとしては，`{%= module_name %}` で `grunt-init` コマンドのプロンプトで指定されたモジュール名で置換するようにしている．`root/` 配下にあるテンプレートは，基本こんな感じで `{% %}` に置換したい変数名を指定したテンプレートを作成すればいいだけだ．今回この記事で扱うテンプレートは1つのファイルだけであるが，他にも `root/` には `grunt-init` に[ビルドイン][template-build-in]されているテンプレートのように，複数のテンプレートを設置することも可能．
 
