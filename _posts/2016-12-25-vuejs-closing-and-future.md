@@ -40,7 +40,7 @@ GitHub の star も今年1月初めには 10K ちょっとだったのが、こ�
 
 ![](https://kazupon.github.com/images/20161225_github_star.png)
 
-他に Vue.js公式サイトのページビュー数、NPM ダウンロード数などの数値的なものは、今年の8月のものでちょっと古いですが、Vue.js 公式ブログの[こちら](https://medium.com/the-vue-point/the-state-of-vue-1655e10a340a#21bf)にあります。(最新の数値的なものは近々 Evan 氏がレビュー的なブログで公開すると思います。)
+他に Vue.js公式サイトのページビュー数、NPM ダウンロード数などの数値的なものは、今年の8月のものでちょっと古いですが、Vue.js 公式ブログの[こちら](https://medium.com/the-vue-point/the-state-of-vue-1655e10a340a#21bf)にあります。(最新の数値的なものは近々 Evan 氏がレビュー的なブログで公開すると思います。追記: [公式ブログ記事](https://medium.com/the-vue-point/vue-in-2016-8df71d98bfb3#.ypkfk7de0)公開されました。)
 
 今年これだけ成長した要因は、これまでに自分自身、Twitter、GitHub などの SNS、Web メディア、そして Vue.js コアチームメンバー内のやり取りを見てきた感じからすると、肌感覚でふわっとした感じになりますが、以下が要因なのではないかと考えています。
 
